@@ -1,0 +1,14 @@
+﻿<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="192.168.40.206.svanderest_IronwoodDWStaging.svanderest1"
+  DTS:DTSID="{2D73CA82-82C6-4A31-8DBF-52616D70BA91}"
+  DTS:CreationName="OLEDB">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectionString="Data Source=192.168.40.206;User ID=svanderest1;Initial Catalog=svanderest_IronwoodDWStaging;Provider=MSOLEDBSQL.1;Application Name=SSIS-Svanderest_Lab4-{2D73CA82-82C6-4A31-8DBF-52616D70BA91}192.168.40.206.svanderest_IronwoodDWStaging.svanderest1;Auto Translate=False;">
+      <DTS:Password
+        DTS:Name="Password"
+        Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAqu4MELbxaEqXR6HNcTsxkgAAAAACAAAAAAADZgAAwAAAABAAAACmem0EuRCbLKs6urcbyoVgAAAAAASAAACgAAAAEAAAAK2wY8Kj/oZajKyi6hVl9J14AAAAcybLj4FIZeVTtqM1lShCrfXgCEExh6vDch4iCA0ouXCnydKCuRhiDMxNfP7yTg4vSCxLDcXZjGmaPzYfU9mykjyEQ3YhToqEm+2mEpDetqr2fZplIA7t5+e0kZj/+d+DuB14vp5oHqiC3lSZzenO0X0Ej7mPsbYLFAAAAOXtSIsUxfpRzxrXXyVWzpflNy/l</DTS:Password>
+    </DTS:ConnectionManager>
+  </DTS:ObjectData>
+</DTS:ConnectionManager>

@@ -26,12 +26,11 @@
           <SSIS:Property SSIS:Name="CreatorComputerName">M21217C0499</SSIS:Property>
           <SSIS:Property SSIS:Name="Description">
           </SSIS:Property>
-          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAqu4MELbxaEqXR6HNcTsxkgAAAAACAAAAAAADZgAAwAAAABAAAABYS4wna8+itB2YSOhbzHiQAAAAAASAAACgAAAAEAAAANlC9Vd4huszoczhxEuHP6eIAAAA3NRFDQwVc5LMNxZx5XFmaSS3g7yta7APJMHB9ACdd7efiNK6kQCi7HRTSUl16nPNFYhDOum/UXO1jQODYBANlHD/vLr3fTzvgeHq7bTatxXU0mmMWjaLIkTRbMyjXmdl2WCPh8q1nNqL2OELEScjaGiAmm1zogq/eJMCCCZGlhbPygMLGy48HxQAAADtdcI7/4xa7DrYssCPfcR5hON6pQ==</SSIS:Property>
+          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAqu4MELbxaEqXR6HNcTsxkgAAAAACAAAAAAADZgAAwAAAABAAAADjVMWBdo2lw1qH5p9OW9ylAAAAAASAAACgAAAAEAAAAI2dLoethByfcdhMM9KAIUiIAAAAfE9w7rbYxetI42eA3RKJKRJqk2wbcLTGjWBdOpogwC26WenK7NjB3w1ZHHK6cM7G7tbdKomga7NHdJOSIg7NoZJpDjngBdXTyMx4DJ666T3HBKhDZ/bsbTB7A63YHiyGYaIeaFfgiQYgq3iq6O8YZ3dijRN1d7kU4vv1IgJmGTRq2DwJ084NExQAAAAMkWXY+LAfFjN0Xy5/KJAhADAAag==</SSIS:Property>
           <SSIS:Property SSIS:Name="FormatVersion">1</SSIS:Property>
         </SSIS:Properties>
         <SSIS:Packages>
           <SSIS:Package SSIS:Name="01-00-Master-Extract.dtsx" SSIS:EntryPoint="1" />
-          <SSIS:Package SSIS:Name="01-01-Students-Extract.dtsx" SSIS:EntryPoint="1" />
         </SSIS:Packages>
         <SSIS:ConnectionManagers>
           <SSIS:ConnectionManager SSIS:Name="192.168.40.206.Ironwood.svanderest1.conmgr" />
@@ -295,38 +294,6 @@
                 <SSIS:Property SSIS:Name="ProtectionLevel">1</SSIS:Property>
               </SSIS:Properties>
               <SSIS:Parameters />
-            </SSIS:PackageMetaData>
-            <SSIS:PackageMetaData SSIS:Name="01-01-Students-Extract.dtsx">
-              <SSIS:Properties>
-                <SSIS:Property SSIS:Name="ID">{B71B260F-5044-41A5-9D5D-E3637306ED3A}</SSIS:Property>
-                <SSIS:Property SSIS:Name="Name">Package1</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">3</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionComments">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{0234DE92-F922-43BA-86AB-7534FB788D40}</SSIS:Property>
-                <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
-                <SSIS:Property SSIS:Name="Description">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="ProtectionLevel">1</SSIS:Property>
-              </SSIS:Properties>
-              <SSIS:Parameters>
-                <SSIS:Parameter SSIS:Name="ParentAuditKeyParam">
-                  <SSIS:Properties>
-                    <SSIS:Property SSIS:Name="ID">{8FB259D7-8865-4C01-A52C-659A2018DBB5}</SSIS:Property>
-                    <SSIS:Property SSIS:Name="CreationName">
-                    </SSIS:Property>
-                    <SSIS:Property SSIS:Name="Description">
-                    </SSIS:Property>
-                    <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="DataType">9</SSIS:Property>
-                  </SSIS:Properties>
-                </SSIS:Parameter>
-              </SSIS:Parameters>
             </SSIS:PackageMetaData>
           </SSIS:PackageInfo>
         </SSIS:DeploymentInfo>
