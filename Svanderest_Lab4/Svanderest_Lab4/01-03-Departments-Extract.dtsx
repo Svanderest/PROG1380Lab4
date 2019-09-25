@@ -5,14 +5,14 @@
   DTS:CreationName="Microsoft.Package"
   DTS:CreatorComputerName="M21217C0499"
   DTS:CreatorName="NC\svanderest1"
-  DTS:DTSID="{B71B260F-5044-41A5-9D5D-E3637306ED3A}"
+  DTS:DTSID="{C91D21F1-7E5E-47D3-8E3B-85D318F68D6F}"
   DTS:ExecutableType="Microsoft.Package"
   DTS:LastModifiedProductVersion="15.0.1301.433"
   DTS:LocaleID="1033"
-  DTS:ObjectName="01-01 Student Extract"
+  DTS:ObjectName="01-03 Department Extract"
   DTS:PackageType="5"
-  DTS:VersionBuild="13"
-  DTS:VersionGUID="{DF58F345-F99F-4192-8C13-C3C3D3FE7B11}">
+  DTS:VersionBuild="16"
+  DTS:VersionGUID="{8DEAF55B-311D-4232-8D09-5DBCECCCCE3A}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -20,7 +20,7 @@
       DTS:refId="Package.ConnectionManagers[Flat File Connection Manager]"
       DTS:CreationName="FLATFILE"
       DTS:Description="FF Errors Conn"
-      DTS:DTSID="{2F723C52-FBA7-486C-9851-4604D5FEA62C}"
+      DTS:DTSID="{629EF1EA-9ED8-4ECA-9078-4B4F0C950947}"
       DTS:ObjectName="Flat File Connection Manager">
       <DTS:PropertyExpression
         DTS:Name="ConnectionString">"C:\\SSIS_Errors\\" +  @[User::DestinationTable] + "_Errors.txt"</DTS:PropertyExpression>
@@ -33,7 +33,7 @@
           DTS:RowDelimiter=""
           DTS:TextQualifier="_x003C_none_x003E_"
           DTS:CodePage="1252"
-          DTS:ConnectionString="C:\SSIS_Errors\[Staging].[DimStudent]_Errors.txt">
+          DTS:ConnectionString="C:\SSIS_Errors\[Staging].[DimDepartment]_Errors.txt">
           <DTS:FlatFileColumns>
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -41,7 +41,7 @@
               DTS:DataType="20"
               DTS:TextQualified="True"
               DTS:ObjectName="StudentID"
-              DTS:DTSID="{DB5E94E6-A354-4A93-B51B-0EB4B67D1483}"
+              DTS:DTSID="{18A5D7E1-5271-4488-B7EF-315465E25083}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -50,7 +50,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="StudentFirstName"
-              DTS:DTSID="{00CF4083-7C60-411E-BB3B-7EC139382894}"
+              DTS:DTSID="{26E64D96-B84B-4634-B592-351E85B74C51}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -59,7 +59,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="StudentLastName"
-              DTS:DTSID="{2C3C245E-3BA0-47CE-A1F8-78F01F150CC5}"
+              DTS:DTSID="{0704C733-A039-401E-BB9E-4DC0D83861F4}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -67,7 +67,7 @@
               DTS:DataType="135"
               DTS:TextQualified="True"
               DTS:ObjectName="StudentDOB"
-              DTS:DTSID="{A4293D27-2C89-4495-B57B-3B93E6705851}"
+              DTS:DTSID="{EA788CA5-141E-4F03-A396-43D0E432C17D}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -76,7 +76,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="StudentGender"
-              DTS:DTSID="{C6D0BE64-4EEA-4949-88B4-B493AA7510C3}"
+              DTS:DTSID="{81003C20-5EF6-4065-A976-C15D1B9C6F97}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -85,7 +85,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="StudentAddress"
-              DTS:DTSID="{DF79A5C6-3573-4D15-88DD-79ECC7C0F23E}"
+              DTS:DTSID="{DC63F766-E754-4380-ACA9-7C277E92775D}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -94,7 +94,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="StudentCity"
-              DTS:DTSID="{F25686AD-1ED5-4EA1-9EC0-A65227004EE2}"
+              DTS:DTSID="{B78DA846-0579-46FB-A347-5D61834ED165}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -103,7 +103,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="StudentPhoneNumber"
-              DTS:DTSID="{2D0B6835-C02E-4D3B-BE96-DFF1E93CE058}"
+              DTS:DTSID="{742138BE-CB09-45F3-94E9-B023794059EB}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -112,7 +112,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="StateAbbreviation"
-              DTS:DTSID="{5A924AF5-47E0-474D-A7D7-F3F250284DD3}"
+              DTS:DTSID="{681E07F9-82E6-42E2-A744-381999A31188}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -121,7 +121,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="StudentPostalCode"
-              DTS:DTSID="{B355E310-C099-4ABA-ADEE-EE09A8FCEDC1}"
+              DTS:DTSID="{54DD66B8-FEA8-4496-8B5F-9C89F6CF269E}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -129,7 +129,7 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="ErrorCode"
-              DTS:DTSID="{A7D51424-2379-47C3-B3E2-384610F27615}"
+              DTS:DTSID="{9196D18C-408A-4AAB-B899-DC68D83F4BD8}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -137,7 +137,7 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="ErrorColumn"
-              DTS:DTSID="{BACA3363-4439-4E0B-ACF6-F8E5C0BE62E1}"
+              DTS:DTSID="{10B82020-0F43-4083-B21E-C6F93FCF38A8}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -148,7 +148,7 @@
     <DTS:PackageParameter
       DTS:CreationName=""
       DTS:DataType="3"
-      DTS:DTSID="{8FB259D7-8865-4C01-A52C-659A2018DBB5}"
+      DTS:DTSID="{E65AE8EB-A5D1-4E77-A057-B873F482045B}"
       DTS:ObjectName="ParentAuditKeyParam">
       <DTS:Property
         DTS:DataType="3"
@@ -158,7 +158,7 @@
   <DTS:Variables>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{A267EA27-BD45-47C8-82BB-B08FC0C0EABD}"
+      DTS:DTSID="{156EA4E2-C3A8-4217-8792-29CD391C756B}"
       DTS:IncludeInDebugDump="6789"
       DTS:Namespace="User"
       DTS:ObjectName="AuditKey">
@@ -167,16 +167,16 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{4BF84BBE-87EC-4A74-B7F4-84AC710F6036}"
+      DTS:DTSID="{4FD00573-3016-461E-B0D3-C6EA2023A2EF}"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="DestinationTable">
       <DTS:VariableValue
-        DTS:DataType="8">[Staging].[DimStudent]</DTS:VariableValue>
+        DTS:DataType="8">[Staging].[DimDepartment]</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{BFF22599-A96E-4216-91F5-12F4C8D0429D}"
+      DTS:DTSID="{95D5407D-B6FC-4CD7-AE93-2B048D529A88}"
       DTS:IncludeInDebugDump="6789"
       DTS:Namespace="User"
       DTS:ObjectName="ErrorCount">
@@ -185,7 +185,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{F72D0F62-7F6D-40E8-B07E-FB48545028BD}"
+      DTS:DTSID="{7F6B1C97-4AE0-4CEF-ABE5-0A30F6051166}"
       DTS:IncludeInDebugDump="6789"
       DTS:Namespace="User"
       DTS:ObjectName="ExtractRowCount">
@@ -194,7 +194,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{9604A770-92A9-4767-9B5F-94E56904A525}"
+      DTS:DTSID="{38208DF7-1968-470A-92F8-36550FCCAB52}"
       DTS:EvaluateAsExpression="True"
       DTS:Expression="@[$Package::ParentAuditKeyParam]"
       DTS:IncludeInDebugDump="2345"
@@ -205,16 +205,16 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{4857008E-9BEB-4312-AB2B-E1D5499AED48}"
+      DTS:DTSID="{C437AD0E-9B70-4F03-B41C-692C88D1CE81}"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="SourceTable">
       <DTS:VariableValue
-        DTS:DataType="8">[dbo].[UniversityStudent]</DTS:VariableValue>
+        DTS:DataType="8">[dbo].[UniversityDepartment]</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{B5BE4D74-C93C-4042-A213-EB90D0FA50FF}"
+      DTS:DTSID="{A0762D05-0873-4BBF-B8A3-A1F879897BE6}"
       DTS:IncludeInDebugDump="6789"
       DTS:Namespace="User"
       DTS:ObjectName="TableFinalCount">
@@ -227,7 +227,7 @@
       DTS:refId="Package\DFT Extract Data"
       DTS:CreationName="Microsoft.Pipeline"
       DTS:Description="Data Flow Task"
-      DTS:DTSID="{E61631CC-DB34-48FF-9327-A42756866E6A}"
+      DTS:DTSID="{69C78932-92B0-401C-A570-C058CF3B5224}"
       DTS:ExecutableType="Microsoft.Pipeline"
       DTS:LocaleID="-1"
       DTS:ObjectName="DFT Extract Data"
@@ -272,82 +272,6 @@
                   hasSideEffects="true"
                   name="Flat File Destination Input">
                   <inputColumns>
-                    <inputColumn
-                      refId="Package\DFT Extract Data\FF Errors.Inputs[Flat File Destination Input].Columns[StudentID]"
-                      cachedDataType="i8"
-                      cachedName="StudentID"
-                      externalMetadataColumnId="Package\DFT Extract Data\FF Errors.Inputs[Flat File Destination Input].ExternalColumns[StudentID]"
-                      lineageId="Package\DFT Extract Data\OLE DB Source.Outputs[OLE DB Source Output].Columns[StudentID]" />
-                    <inputColumn
-                      refId="Package\DFT Extract Data\FF Errors.Inputs[Flat File Destination Input].Columns[StudentFirstName]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="30"
-                      cachedName="StudentFirstName"
-                      externalMetadataColumnId="Package\DFT Extract Data\FF Errors.Inputs[Flat File Destination Input].ExternalColumns[StudentFirstName]"
-                      lineageId="Package\DFT Extract Data\OLE DB Source.Outputs[OLE DB Source Output].Columns[StudentFirstName]" />
-                    <inputColumn
-                      refId="Package\DFT Extract Data\FF Errors.Inputs[Flat File Destination Input].Columns[StudentLastName]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="30"
-                      cachedName="StudentLastName"
-                      externalMetadataColumnId="Package\DFT Extract Data\FF Errors.Inputs[Flat File Destination Input].ExternalColumns[StudentLastName]"
-                      lineageId="Package\DFT Extract Data\OLE DB Source.Outputs[OLE DB Source Output].Columns[StudentLastName]" />
-                    <inputColumn
-                      refId="Package\DFT Extract Data\FF Errors.Inputs[Flat File Destination Input].Columns[StudentDOB]"
-                      cachedDataType="dbTimeStamp"
-                      cachedName="StudentDOB"
-                      externalMetadataColumnId="Package\DFT Extract Data\FF Errors.Inputs[Flat File Destination Input].ExternalColumns[StudentDOB]"
-                      lineageId="Package\DFT Extract Data\OLE DB Source.Outputs[OLE DB Source Output].Columns[StudentDOB]" />
-                    <inputColumn
-                      refId="Package\DFT Extract Data\FF Errors.Inputs[Flat File Destination Input].Columns[StudentGender]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="1"
-                      cachedName="StudentGender"
-                      externalMetadataColumnId="Package\DFT Extract Data\FF Errors.Inputs[Flat File Destination Input].ExternalColumns[StudentGender]"
-                      lineageId="Package\DFT Extract Data\OLE DB Source.Outputs[OLE DB Source Output].Columns[StudentGender]" />
-                    <inputColumn
-                      refId="Package\DFT Extract Data\FF Errors.Inputs[Flat File Destination Input].Columns[StudentAddress]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="50"
-                      cachedName="StudentAddress"
-                      externalMetadataColumnId="Package\DFT Extract Data\FF Errors.Inputs[Flat File Destination Input].ExternalColumns[StudentAddress]"
-                      lineageId="Package\DFT Extract Data\OLE DB Source.Outputs[OLE DB Source Output].Columns[StudentAddress]" />
-                    <inputColumn
-                      refId="Package\DFT Extract Data\FF Errors.Inputs[Flat File Destination Input].Columns[StudentCity]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="50"
-                      cachedName="StudentCity"
-                      externalMetadataColumnId="Package\DFT Extract Data\FF Errors.Inputs[Flat File Destination Input].ExternalColumns[StudentCity]"
-                      lineageId="Package\DFT Extract Data\OLE DB Source.Outputs[OLE DB Source Output].Columns[StudentCity]" />
-                    <inputColumn
-                      refId="Package\DFT Extract Data\FF Errors.Inputs[Flat File Destination Input].Columns[StudentPhoneNumber]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="10"
-                      cachedName="StudentPhoneNumber"
-                      externalMetadataColumnId="Package\DFT Extract Data\FF Errors.Inputs[Flat File Destination Input].ExternalColumns[StudentPhoneNumber]"
-                      lineageId="Package\DFT Extract Data\OLE DB Source.Outputs[OLE DB Source Output].Columns[StudentPhoneNumber]" />
-                    <inputColumn
-                      refId="Package\DFT Extract Data\FF Errors.Inputs[Flat File Destination Input].Columns[StateAbbreviation]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="2"
-                      cachedName="StateAbbreviation"
-                      externalMetadataColumnId="Package\DFT Extract Data\FF Errors.Inputs[Flat File Destination Input].ExternalColumns[StateAbbreviation]"
-                      lineageId="Package\DFT Extract Data\OLE DB Source.Outputs[OLE DB Source Output].Columns[StateAbbreviation]" />
-                    <inputColumn
-                      refId="Package\DFT Extract Data\FF Errors.Inputs[Flat File Destination Input].Columns[StudentPostalCode]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="10"
-                      cachedName="StudentPostalCode"
-                      externalMetadataColumnId="Package\DFT Extract Data\FF Errors.Inputs[Flat File Destination Input].ExternalColumns[StudentPostalCode]"
-                      lineageId="Package\DFT Extract Data\OLE DB Source.Outputs[OLE DB Source Output].Columns[StudentPostalCode]" />
                     <inputColumn
                       refId="Package\DFT Extract Data\FF Errors.Inputs[Flat File Destination Input].Columns[ErrorCode]"
                       cachedDataType="i4"
@@ -504,140 +428,32 @@
                   name="OLE DB Destination Input">
                   <inputColumns>
                     <inputColumn
-                      refId="Package\DFT Extract Data\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[StudentID]"
+                      refId="Package\DFT Extract Data\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[DepartmentID]"
                       cachedDataType="i8"
-                      cachedName="StudentID"
-                      externalMetadataColumnId="Package\DFT Extract Data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[StudentID]"
-                      lineageId="Package\DFT Extract Data\OLE DB Source.Outputs[OLE DB Source Output].Columns[StudentID]" />
+                      cachedName="DepartmentID"
+                      externalMetadataColumnId="Package\DFT Extract Data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DepartmentID]"
+                      lineageId="Package\DFT Extract Data\OLE DB Source.Outputs[OLE DB Source Output].Columns[DepartmentID]" />
                     <inputColumn
-                      refId="Package\DFT Extract Data\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[StudentFirstName]"
+                      refId="Package\DFT Extract Data\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[DepartmentName]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="30"
-                      cachedName="StudentFirstName"
-                      externalMetadataColumnId="Package\DFT Extract Data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[StudentFirstName]"
-                      lineageId="Package\DFT Extract Data\OLE DB Source.Outputs[OLE DB Source Output].Columns[StudentFirstName]" />
-                    <inputColumn
-                      refId="Package\DFT Extract Data\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[StudentLastName]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="30"
-                      cachedName="StudentLastName"
-                      externalMetadataColumnId="Package\DFT Extract Data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[StudentLastName]"
-                      lineageId="Package\DFT Extract Data\OLE DB Source.Outputs[OLE DB Source Output].Columns[StudentLastName]" />
-                    <inputColumn
-                      refId="Package\DFT Extract Data\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[StudentDOB]"
-                      cachedDataType="dbTimeStamp"
-                      cachedName="StudentDOB"
-                      externalMetadataColumnId="Package\DFT Extract Data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[StudentDOB]"
-                      lineageId="Package\DFT Extract Data\OLE DB Source.Outputs[OLE DB Source Output].Columns[StudentDOB]" />
-                    <inputColumn
-                      refId="Package\DFT Extract Data\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[StudentGender]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="1"
-                      cachedName="StudentGender"
-                      externalMetadataColumnId="Package\DFT Extract Data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[StudentGender]"
-                      lineageId="Package\DFT Extract Data\OLE DB Source.Outputs[OLE DB Source Output].Columns[StudentGender]" />
-                    <inputColumn
-                      refId="Package\DFT Extract Data\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[StudentAddress]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="50"
-                      cachedName="StudentAddress"
-                      externalMetadataColumnId="Package\DFT Extract Data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[StudentAddress]"
-                      lineageId="Package\DFT Extract Data\OLE DB Source.Outputs[OLE DB Source Output].Columns[StudentAddress]" />
-                    <inputColumn
-                      refId="Package\DFT Extract Data\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[StudentCity]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="50"
-                      cachedName="StudentCity"
-                      externalMetadataColumnId="Package\DFT Extract Data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[StudentCity]"
-                      lineageId="Package\DFT Extract Data\OLE DB Source.Outputs[OLE DB Source Output].Columns[StudentCity]" />
-                    <inputColumn
-                      refId="Package\DFT Extract Data\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[StudentPhoneNumber]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="10"
-                      cachedName="StudentPhoneNumber"
-                      externalMetadataColumnId="Package\DFT Extract Data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[StudentPhoneNumber]"
-                      lineageId="Package\DFT Extract Data\OLE DB Source.Outputs[OLE DB Source Output].Columns[StudentPhoneNumber]" />
-                    <inputColumn
-                      refId="Package\DFT Extract Data\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[StateAbbreviation]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="2"
-                      cachedName="StateAbbreviation"
-                      externalMetadataColumnId="Package\DFT Extract Data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[StateAbbreviation]"
-                      lineageId="Package\DFT Extract Data\OLE DB Source.Outputs[OLE DB Source Output].Columns[StateAbbreviation]" />
-                    <inputColumn
-                      refId="Package\DFT Extract Data\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[StudentPostalCode]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="10"
-                      cachedName="StudentPostalCode"
-                      externalMetadataColumnId="Package\DFT Extract Data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[StudentPostalCode]"
-                      lineageId="Package\DFT Extract Data\OLE DB Source.Outputs[OLE DB Source Output].Columns[StudentPostalCode]" />
+                      cachedName="DepartmentName"
+                      externalMetadataColumnId="Package\DFT Extract Data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DepartmentName]"
+                      lineageId="Package\DFT Extract Data\OLE DB Source.Outputs[OLE DB Source Output].Columns[DepartmentName]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
-                      refId="Package\DFT Extract Data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[StudentID]"
+                      refId="Package\DFT Extract Data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DepartmentID]"
                       dataType="i8"
-                      name="StudentID" />
+                      name="DepartmentID" />
                     <externalMetadataColumn
-                      refId="Package\DFT Extract Data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[StudentFirstName]"
+                      refId="Package\DFT Extract Data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DepartmentName]"
                       codePage="1252"
                       dataType="str"
                       length="30"
-                      name="StudentFirstName" />
-                    <externalMetadataColumn
-                      refId="Package\DFT Extract Data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[StudentLastName]"
-                      codePage="1252"
-                      dataType="str"
-                      length="30"
-                      name="StudentLastName" />
-                    <externalMetadataColumn
-                      refId="Package\DFT Extract Data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[StudentDOB]"
-                      dataType="dbTimeStamp"
-                      name="StudentDOB" />
-                    <externalMetadataColumn
-                      refId="Package\DFT Extract Data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[StudentGender]"
-                      codePage="1252"
-                      dataType="str"
-                      length="1"
-                      name="StudentGender" />
-                    <externalMetadataColumn
-                      refId="Package\DFT Extract Data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[StudentAddress]"
-                      codePage="1252"
-                      dataType="str"
-                      length="50"
-                      name="StudentAddress" />
-                    <externalMetadataColumn
-                      refId="Package\DFT Extract Data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[StudentCity]"
-                      codePage="1252"
-                      dataType="str"
-                      length="50"
-                      name="StudentCity" />
-                    <externalMetadataColumn
-                      refId="Package\DFT Extract Data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[StudentPostalCode]"
-                      codePage="1252"
-                      dataType="str"
-                      length="10"
-                      name="StudentPostalCode" />
-                    <externalMetadataColumn
-                      refId="Package\DFT Extract Data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[StudentPhoneNumber]"
-                      codePage="1252"
-                      dataType="str"
-                      length="10"
-                      name="StudentPhoneNumber" />
-                    <externalMetadataColumn
-                      refId="Package\DFT Extract Data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[StateAbbreviation]"
-                      codePage="1252"
-                      dataType="str"
-                      length="2"
-                      name="StateAbbreviation" />
+                      name="DepartmentName" />
                   </externalMetadataColumns>
                 </input>
               </inputs>
@@ -728,208 +544,28 @@
                   name="OLE DB Source Output">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\DFT Extract Data\OLE DB Source.Outputs[OLE DB Source Output].Columns[StudentID]"
+                      refId="Package\DFT Extract Data\OLE DB Source.Outputs[OLE DB Source Output].Columns[DepartmentID]"
                       dataType="i8"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\DFT Extract Data\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[StudentID]"
-                      lineageId="Package\DFT Extract Data\OLE DB Source.Outputs[OLE DB Source Output].Columns[StudentID]"
-                      name="StudentID"
+                      externalMetadataColumnId="Package\DFT Extract Data\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[DepartmentID]"
+                      lineageId="Package\DFT Extract Data\OLE DB Source.Outputs[OLE DB Source Output].Columns[DepartmentID]"
+                      name="DepartmentID"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\DFT Extract Data\OLE DB Source.Outputs[OLE DB Source Output].Columns[StudentFirstName]"
+                      refId="Package\DFT Extract Data\OLE DB Source.Outputs[OLE DB Source Output].Columns[DepartmentName]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\DFT Extract Data\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[StudentFirstName]"
+                      externalMetadataColumnId="Package\DFT Extract Data\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[DepartmentName]"
                       length="30"
-                      lineageId="Package\DFT Extract Data\OLE DB Source.Outputs[OLE DB Source Output].Columns[StudentFirstName]"
-                      name="StudentFirstName"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\DFT Extract Data\OLE DB Source.Outputs[OLE DB Source Output].Columns[StudentLastName]"
-                      codePage="1252"
-                      dataType="str"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\DFT Extract Data\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[StudentLastName]"
-                      length="30"
-                      lineageId="Package\DFT Extract Data\OLE DB Source.Outputs[OLE DB Source Output].Columns[StudentLastName]"
-                      name="StudentLastName"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\DFT Extract Data\OLE DB Source.Outputs[OLE DB Source Output].Columns[StudentDOB]"
-                      dataType="dbTimeStamp"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\DFT Extract Data\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[StudentDOB]"
-                      lineageId="Package\DFT Extract Data\OLE DB Source.Outputs[OLE DB Source Output].Columns[StudentDOB]"
-                      name="StudentDOB"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\DFT Extract Data\OLE DB Source.Outputs[OLE DB Source Output].Columns[StudentGender]"
-                      codePage="1252"
-                      dataType="str"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\DFT Extract Data\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[StudentGender]"
-                      length="1"
-                      lineageId="Package\DFT Extract Data\OLE DB Source.Outputs[OLE DB Source Output].Columns[StudentGender]"
-                      name="StudentGender"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\DFT Extract Data\OLE DB Source.Outputs[OLE DB Source Output].Columns[StudentAddress]"
-                      codePage="1252"
-                      dataType="str"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\DFT Extract Data\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[StudentAddress]"
-                      length="50"
-                      lineageId="Package\DFT Extract Data\OLE DB Source.Outputs[OLE DB Source Output].Columns[StudentAddress]"
-                      name="StudentAddress"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\DFT Extract Data\OLE DB Source.Outputs[OLE DB Source Output].Columns[StudentCity]"
-                      codePage="1252"
-                      dataType="str"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\DFT Extract Data\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[StudentCity]"
-                      length="50"
-                      lineageId="Package\DFT Extract Data\OLE DB Source.Outputs[OLE DB Source Output].Columns[StudentCity]"
-                      name="StudentCity"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\DFT Extract Data\OLE DB Source.Outputs[OLE DB Source Output].Columns[StudentPhoneNumber]"
-                      codePage="1252"
-                      dataType="str"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\DFT Extract Data\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[StudentPhoneNumber]"
-                      length="10"
-                      lineageId="Package\DFT Extract Data\OLE DB Source.Outputs[OLE DB Source Output].Columns[StudentPhoneNumber]"
-                      name="StudentPhoneNumber"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\DFT Extract Data\OLE DB Source.Outputs[OLE DB Source Output].Columns[StateAbbreviation]"
-                      codePage="1252"
-                      dataType="str"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\DFT Extract Data\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[StateAbbreviation]"
-                      length="2"
-                      lineageId="Package\DFT Extract Data\OLE DB Source.Outputs[OLE DB Source Output].Columns[StateAbbreviation]"
-                      name="StateAbbreviation"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\DFT Extract Data\OLE DB Source.Outputs[OLE DB Source Output].Columns[StudentPostalCode]"
-                      codePage="1252"
-                      dataType="str"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\DFT Extract Data\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[StudentPostalCode]"
-                      length="10"
-                      lineageId="Package\DFT Extract Data\OLE DB Source.Outputs[OLE DB Source Output].Columns[StudentPostalCode]"
-                      name="StudentPostalCode"
+                      lineageId="Package\DFT Extract Data\OLE DB Source.Outputs[OLE DB Source Output].Columns[DepartmentName]"
+                      name="DepartmentName"
                       truncationRowDisposition="FailComponent" />
                   </outputColumns>
                   <externalMetadataColumns
                     isUsed="True">
-                    <externalMetadataColumn
-                      refId="Package\DFT Extract Data\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[StudentID]"
-                      dataType="i8"
-                      name="StudentID" />
-                    <externalMetadataColumn
-                      refId="Package\DFT Extract Data\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[StudentFirstName]"
-                      codePage="1252"
-                      dataType="str"
-                      length="30"
-                      name="StudentFirstName" />
-                    <externalMetadataColumn
-                      refId="Package\DFT Extract Data\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[StudentMI]"
-                      codePage="1252"
-                      dataType="str"
-                      length="1"
-                      name="StudentMI" />
-                    <externalMetadataColumn
-                      refId="Package\DFT Extract Data\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[StudentLastName]"
-                      codePage="1252"
-                      dataType="str"
-                      length="30"
-                      name="StudentLastName" />
-                    <externalMetadataColumn
-                      refId="Package\DFT Extract Data\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[StudentDOB]"
-                      dataType="dbTimeStamp"
-                      name="StudentDOB" />
-                    <externalMetadataColumn
-                      refId="Package\DFT Extract Data\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[StudentGender]"
-                      codePage="1252"
-                      dataType="str"
-                      length="1"
-                      name="StudentGender" />
-                    <externalMetadataColumn
-                      refId="Package\DFT Extract Data\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[StudentImagefile]"
-                      codePage="1252"
-                      dataType="str"
-                      length="30"
-                      name="StudentImagefile" />
-                    <externalMetadataColumn
-                      refId="Package\DFT Extract Data\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[StudentImage]"
-                      dataType="image"
-                      name="StudentImage" />
-                    <externalMetadataColumn
-                      refId="Package\DFT Extract Data\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[StudentAddress]"
-                      codePage="1252"
-                      dataType="str"
-                      length="50"
-                      name="StudentAddress" />
-                    <externalMetadataColumn
-                      refId="Package\DFT Extract Data\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[StudentCity]"
-                      codePage="1252"
-                      dataType="str"
-                      length="50"
-                      name="StudentCity" />
-                    <externalMetadataColumn
-                      refId="Package\DFT Extract Data\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[StateAbbreviation]"
-                      codePage="1252"
-                      dataType="str"
-                      length="2"
-                      name="StateAbbreviation" />
-                    <externalMetadataColumn
-                      refId="Package\DFT Extract Data\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[StudentPostalCode]"
-                      codePage="1252"
-                      dataType="str"
-                      length="10"
-                      name="StudentPostalCode" />
-                    <externalMetadataColumn
-                      refId="Package\DFT Extract Data\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[StudentPhoneNumber]"
-                      codePage="1252"
-                      dataType="str"
-                      length="10"
-                      name="StudentPhoneNumber" />
-                    <externalMetadataColumn
-                      refId="Package\DFT Extract Data\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[StudentUserID]"
-                      codePage="1252"
-                      dataType="str"
-                      length="35"
-                      name="StudentUserID" />
-                    <externalMetadataColumn
-                      refId="Package\DFT Extract Data\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[StudentPIN]"
-                      codePage="1252"
-                      dataType="str"
-                      length="10"
-                      name="StudentPIN" />
-                    <externalMetadataColumn
-                      refId="Package\DFT Extract Data\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[StudentStatus]"
-                      codePage="1252"
-                      dataType="str"
-                      length="20"
-                      name="StudentStatus" />
-                    <externalMetadataColumn
-                      refId="Package\DFT Extract Data\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[AdvisorID]"
-                      dataType="i8"
-                      name="AdvisorID" />
                     <externalMetadataColumn
                       refId="Package\DFT Extract Data\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[createdOn]"
                       dataType="dbTimeStamp2"
@@ -950,6 +586,31 @@
                       dataType="wstr"
                       length="256"
                       name="lastEditedBy" />
+                    <externalMetadataColumn
+                      refId="Package\DFT Extract Data\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[DepartmentID]"
+                      dataType="i8"
+                      name="DepartmentID" />
+                    <externalMetadataColumn
+                      refId="Package\DFT Extract Data\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[DepartmentName]"
+                      codePage="1252"
+                      dataType="str"
+                      length="30"
+                      name="DepartmentName" />
+                    <externalMetadataColumn
+                      refId="Package\DFT Extract Data\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[DepartmentOffice]"
+                      codePage="1252"
+                      dataType="str"
+                      length="30"
+                      name="DepartmentOffice" />
+                    <externalMetadataColumn
+                      refId="Package\DFT Extract Data\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[DepartmentChairID]"
+                      dataType="i8"
+                      name="DepartmentChairID" />
+                    <externalMetadataColumn
+                      refId="Package\DFT Extract Data\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[_rowversion]"
+                      dataType="bytes"
+                      length="8"
+                      name="_rowversion" />
                   </externalMetadataColumns>
                 </output>
                 <output
@@ -957,6 +618,18 @@
                   isErrorOut="true"
                   name="OLE DB Source Error Output">
                   <outputColumns>
+                    <outputColumn
+                      refId="Package\DFT Extract Data\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[DepartmentID]"
+                      dataType="i8"
+                      lineageId="Package\DFT Extract Data\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[DepartmentID]"
+                      name="DepartmentID" />
+                    <outputColumn
+                      refId="Package\DFT Extract Data\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[DepartmentName]"
+                      codePage="1252"
+                      dataType="str"
+                      length="30"
+                      lineageId="Package\DFT Extract Data\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[DepartmentName]"
+                      name="DepartmentName" />
                     <outputColumn
                       refId="Package\DFT Extract Data\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
                       dataType="i4"
@@ -969,72 +642,6 @@
                       lineageId="Package\DFT Extract Data\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
-                    <outputColumn
-                      refId="Package\DFT Extract Data\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[StudentID]"
-                      dataType="i8"
-                      lineageId="Package\DFT Extract Data\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[StudentID]"
-                      name="StudentID" />
-                    <outputColumn
-                      refId="Package\DFT Extract Data\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[StudentFirstName]"
-                      codePage="1252"
-                      dataType="str"
-                      length="30"
-                      lineageId="Package\DFT Extract Data\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[StudentFirstName]"
-                      name="StudentFirstName" />
-                    <outputColumn
-                      refId="Package\DFT Extract Data\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[StudentLastName]"
-                      codePage="1252"
-                      dataType="str"
-                      length="30"
-                      lineageId="Package\DFT Extract Data\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[StudentLastName]"
-                      name="StudentLastName" />
-                    <outputColumn
-                      refId="Package\DFT Extract Data\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[StudentDOB]"
-                      dataType="dbTimeStamp"
-                      lineageId="Package\DFT Extract Data\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[StudentDOB]"
-                      name="StudentDOB" />
-                    <outputColumn
-                      refId="Package\DFT Extract Data\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[StudentGender]"
-                      codePage="1252"
-                      dataType="str"
-                      length="1"
-                      lineageId="Package\DFT Extract Data\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[StudentGender]"
-                      name="StudentGender" />
-                    <outputColumn
-                      refId="Package\DFT Extract Data\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[StudentAddress]"
-                      codePage="1252"
-                      dataType="str"
-                      length="50"
-                      lineageId="Package\DFT Extract Data\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[StudentAddress]"
-                      name="StudentAddress" />
-                    <outputColumn
-                      refId="Package\DFT Extract Data\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[StudentCity]"
-                      codePage="1252"
-                      dataType="str"
-                      length="50"
-                      lineageId="Package\DFT Extract Data\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[StudentCity]"
-                      name="StudentCity" />
-                    <outputColumn
-                      refId="Package\DFT Extract Data\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[StudentPhoneNumber]"
-                      codePage="1252"
-                      dataType="str"
-                      length="10"
-                      lineageId="Package\DFT Extract Data\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[StudentPhoneNumber]"
-                      name="StudentPhoneNumber" />
-                    <outputColumn
-                      refId="Package\DFT Extract Data\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[StateAbbreviation]"
-                      codePage="1252"
-                      dataType="str"
-                      length="2"
-                      lineageId="Package\DFT Extract Data\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[StateAbbreviation]"
-                      name="StateAbbreviation" />
-                    <outputColumn
-                      refId="Package\DFT Extract Data\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[StudentPostalCode]"
-                      codePage="1252"
-                      dataType="str"
-                      length="10"
-                      lineageId="Package\DFT Extract Data\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[StudentPostalCode]"
-                      name="StudentPostalCode" />
                   </outputColumns>
                   <externalMetadataColumns />
                 </output>
@@ -1128,7 +735,7 @@
       DTS:refId="Package\SQL Audit End"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Execute SQL Task"
-      DTS:DTSID="{0E7448BA-7B62-4001-B552-B52FE6AA71EA}"
+      DTS:DTSID="{32774422-1C4A-491D-8327-55FA645DD3BD}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
       DTS:ObjectName="SQL Audit End"
@@ -1169,7 +776,7 @@
       DTS:refId="Package\SQL Audit Start"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Execute SQL Task"
-      DTS:DTSID="{90BA20DB-78EC-419D-AE8C-4E60E102E030}"
+      DTS:DTSID="{CFBE7182-9473-492D-A452-BB175FAA8405}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
       DTS:ObjectName="SQL Audit Start"
@@ -1262,7 +869,7 @@
       DTS:refId="Package\SQL Count Staging Rows"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Execute SQL Task"
-      DTS:DTSID="{31EDD303-C26D-41BB-A284-E5CA41C943D7}"
+      DTS:DTSID="{3B93E1D2-2224-4C4D-812F-B70D42C700D2}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
       DTS:ObjectName="SQL Count Staging Rows"
@@ -1273,7 +880,7 @@
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
           SQLTask:Connection="{2D73CA82-82C6-4A31-8DBF-52616D70BA91}"
-          SQLTask:SqlStatementSource="SELECT COUNT(*) FROM [Staging].[DimStudent]"
+          SQLTask:SqlStatementSource="SELECT COUNT(*) FROM [Staging].[DimDepartment]"
           SQLTask:ResultType="ResultSetType_SingleRow" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
           <SQLTask:ResultBinding
             SQLTask:ResultName="0"
@@ -1285,7 +892,7 @@
       DTS:refId="Package\SQL Truncate Table"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Execute SQL Task"
-      DTS:DTSID="{24547FCF-67CB-4F79-A83C-0F5E786787F4}"
+      DTS:DTSID="{AF496770-7BDB-41EC-9AE2-7B16EF957AAD}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
       DTS:ObjectName="SQL Truncate Table"
@@ -1296,7 +903,7 @@
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
           SQLTask:Connection="{2D73CA82-82C6-4A31-8DBF-52616D70BA91}"
-          SQLTask:SqlStatementSource="TRUNCATE TABLE [Staging].[DimStudent]" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+          SQLTask:SqlStatementSource="TRUNCATE TABLE [Staging].[DimDepartment]" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
   </DTS:Executables>
@@ -1304,7 +911,7 @@
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint]"
       DTS:CreationName=""
-      DTS:DTSID="{3E891A45-D553-478B-852B-92F83A2240AC}"
+      DTS:DTSID="{30EC519E-8D09-453D-9B3D-D7590675A418}"
       DTS:From="Package\SQL Truncate Table"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint"
@@ -1312,7 +919,7 @@
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint 1]"
       DTS:CreationName=""
-      DTS:DTSID="{A22CA935-14AB-492C-ACB3-E014B9048F47}"
+      DTS:DTSID="{47F32AD3-4F21-4865-888A-156E696780F5}"
       DTS:From="Package\SQL Audit Start"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint 1"
@@ -1320,7 +927,7 @@
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint 2]"
       DTS:CreationName=""
-      DTS:DTSID="{9A13FBAC-5872-411F-ADDF-2944B0496B3C}"
+      DTS:DTSID="{5D644748-432C-4299-891D-7C1A6AC2DABF}"
       DTS:From="Package\DFT Extract Data"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint 2"
@@ -1328,7 +935,7 @@
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint 3]"
       DTS:CreationName=""
-      DTS:DTSID="{B613A0A4-A8F7-4FBF-AFB8-BB841F064455}"
+      DTS:DTSID="{0A3C2BAA-563E-4268-95A1-6F1EDCC3D8C3}"
       DTS:From="Package\SQL Count Staging Rows"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint 3"
@@ -1347,13 +954,21 @@
       <GraphLayout
         Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="155,42"
-          Id="Package\SQL Audit Start"
-          TopLeft="359,147" />
+          Size="164,42"
+          Id="Package\DFT Extract Data"
+          TopLeft="370,242" />
         <NodeLayout
           Size="152,42"
           Id="Package\SQL Audit End"
           TopLeft="363,392" />
+        <NodeLayout
+          Size="155,42"
+          Id="Package\SQL Audit Start"
+          TopLeft="359,147" />
+        <NodeLayout
+          Size="204,42"
+          Id="Package\SQL Count Staging Rows"
+          TopLeft="353,313" />
         <NodeLayout
           Size="178,42"
           Id="Package\SQL Truncate Table"
@@ -1392,10 +1007,6 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="164,42"
-          Id="Package\DFT Extract Data"
-          TopLeft="370,242" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 1]"
           TopLeft="436.5,189">
@@ -1430,10 +1041,6 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="204,42"
-          Id="Package\SQL Count Staging Rows"
-          TopLeft="353,313" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 2]"
           TopLeft="453.5,284">
@@ -1499,27 +1106,51 @@
       <GraphLayout
         Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="157,42"
-          Id="Package\DFT Extract Data\OLE DB Source"
-          TopLeft="23,159" />
+          Size="177,42"
+          Id="Package\DFT Extract Data\OLE DB Destination"
+          TopLeft="263,249" />
         <NodeLayout
           Size="132,42"
           Id="Package\DFT Extract Data\RC Extract"
           TopLeft="291,159" />
+        <NodeLayout
+          Size="122,42"
+          Id="Package\DFT Extract Data\RC Error"
+          TopLeft="649,218" />
+        <NodeLayout
+          Size="125,42"
+          Id="Package\DFT Extract Data\FF Errors"
+          TopLeft="536,359" />
+        <NodeLayout
+          Size="157,42"
+          Id="Package\DFT Extract Data\OLE DB Source"
+          TopLeft="23,159" />
         <EdgeLayout
-          Id="Package\DFT Extract Data.Paths[OLE DB Source Output]"
-          TopLeft="180,180">
+          Id="Package\DFT Extract Data.Paths[Row Count Output 11]"
+          TopLeft="710,260">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="111,0"
+              EndConnector="-111.5,99"
               Start="0,0"
-              End="103.5,0">
+              End="-111.5,91.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="103.5,0" />
+                    End="0,45.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,45.5"
+                    Point2="0,49.5"
+                    Point3="-4,49.5" />
+                  <mssgle:LineSegment
+                    End="-107.5,49.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-107.5,49.5"
+                    Point2="-111.5,49.5"
+                    Point3="-111.5,53.5" />
+                  <mssgle:LineSegment
+                    End="-111.5,91.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -1528,10 +1159,6 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="177,42"
-          Id="Package\DFT Extract Data\OLE DB Destination"
-          TopLeft="263,249" />
         <EdgeLayout
           Id="Package\DFT Extract Data.Paths[Row Count Output 1]"
           TopLeft="354.25,201">
@@ -1554,10 +1181,28 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="122,42"
-          Id="Package\DFT Extract Data\RC Error"
-          TopLeft="649,218" />
+        <EdgeLayout
+          Id="Package\DFT Extract Data.Paths[OLE DB Source Output]"
+          TopLeft="180,180">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="111,0"
+              Start="0,0"
+              End="103.5,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="103.5,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
         <EdgeLayout
           Id="Package\DFT Extract Data.Paths[OLE DB Destination Error Output]"
           TopLeft="440,270">
@@ -1592,44 +1237,6 @@
             <mssgm:EdgeLabel
               BoundingBox="31.29109375,1,146.4178125,11.43359375"
               RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="125,42"
-          Id="Package\DFT Extract Data\FF Errors"
-          TopLeft="536,359" />
-        <EdgeLayout
-          Id="Package\DFT Extract Data.Paths[Row Count Output 11]"
-          TopLeft="710,260">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-111.5,99"
-              Start="0,0"
-              End="-111.5,91.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,45.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,45.5"
-                    Point2="0,49.5"
-                    Point3="-4,49.5" />
-                  <mssgle:LineSegment
-                    End="-107.5,49.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-107.5,49.5"
-                    Point2="-111.5,49.5"
-                    Point3="-111.5,53.5" />
-                  <mssgle:LineSegment
-                    End="-111.5,91.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>

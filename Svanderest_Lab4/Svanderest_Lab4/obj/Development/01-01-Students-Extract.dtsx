@@ -9,10 +9,10 @@
   DTS:ExecutableType="Microsoft.Package"
   DTS:LastModifiedProductVersion="15.0.1301.433"
   DTS:LocaleID="1033"
-  DTS:ObjectName="Package1"
+  DTS:ObjectName="01-01 Student Extract"
   DTS:PackageType="5"
-  DTS:VersionBuild="11"
-  DTS:VersionGUID="{6A637E53-BF26-4099-856D-6A02D5A000D7}">
+  DTS:VersionBuild="13"
+  DTS:VersionGUID="{DF58F345-F99F-4192-8C13-C3C3D3FE7B11}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -1557,28 +1557,40 @@
         <NodeLayout
           Size="122,42"
           Id="Package\DFT Extract Data\RC Error"
-          TopLeft="538,252" />
+          TopLeft="649,218" />
         <EdgeLayout
           Id="Package\DFT Extract Data.Paths[OLE DB Destination Error Output]"
-          TopLeft="440,271.5">
+          TopLeft="440,270">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="98,0"
+              EndConnector="209,-31"
               Start="0,0"
-              End="90.5,0">
+              End="201.5,-31">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="90.5,0" />
+                    End="100.5,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="100.5,0"
+                    Point2="104.5,0"
+                    Point3="104.5,-4" />
+                  <mssgle:LineSegment
+                    End="104.5,-27" />
+                  <mssgle:CubicBezierSegment
+                    Point1="104.5,-27"
+                    Point2="104.5,-31"
+                    Point3="108.5,-31" />
+                  <mssgle:LineSegment
+                    End="201.5,-31" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-27.95890625,5,146.4178125,11.43359375"
+              BoundingBox="31.29109375,1,146.4178125,11.43359375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
@@ -1588,18 +1600,30 @@
           TopLeft="536,359" />
         <EdgeLayout
           Id="Package\DFT Extract Data.Paths[Row Count Output 11]"
-          TopLeft="598.75,294">
+          TopLeft="710,260">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,65"
+              EndConnector="-111.5,99"
               Start="0,0"
-              End="0,57.5">
+              End="-111.5,91.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,57.5" />
+                    End="0,45.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,45.5"
+                    Point2="0,49.5"
+                    Point3="-4,49.5" />
+                  <mssgle:LineSegment
+                    End="-107.5,49.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-107.5,49.5"
+                    Point2="-111.5,49.5"
+                    Point3="-111.5,53.5" />
+                  <mssgle:LineSegment
+                    End="-111.5,91.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
