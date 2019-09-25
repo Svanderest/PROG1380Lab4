@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="01-00 Master-Extract"
   DTS:PackageType="5"
-  DTS:VersionBuild="15"
-  DTS:VersionGUID="{734FE7F8-7F2A-4107-BC06-9B5509B50F4E}">
+  DTS:VersionBuild="16"
+  DTS:VersionGUID="{2CFE571B-36BE-45FA-B21B-E0DFBC4B6A0F}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:Variables>
@@ -27,6 +27,27 @@
     </DTS:Variable>
   </DTS:Variables>
   <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\EP Course"
+      DTS:CreationName="Microsoft.ExecutePackageTask"
+      DTS:Description="Execute Package Task"
+      DTS:DTSID="{38D2B02D-71B5-44D3-92BA-B2C1FC2A125E}"
+      DTS:ExecutableType="Microsoft.ExecutePackageTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="EP Course"
+      DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <ExecutePackageTask>
+          <UseProjectReference>True</UseProjectReference>
+          <PackageName>01-04-Course-Extract.dtsx</PackageName>
+          <ParameterAssignment>
+            <ParameterName>ParentAuditKeyParam</ParameterName>
+            <BindedVariableOrParameterName>User::ParentAuditKey</BindedVariableOrParameterName>
+          </ParameterAssignment>
+        </ExecutePackageTask>
+      </DTS:ObjectData>
+    </DTS:Executable>
     <DTS:Executable
       DTS:refId="Package\EP Deparment"
       DTS:CreationName="Microsoft.ExecutePackageTask"
@@ -232,6 +253,22 @@
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint 5"
       DTS:To="Package\SQL Audit End" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 6]"
+      DTS:CreationName=""
+      DTS:DTSID="{821DE3A7-6C47-48CF-BA9B-62BF725E54A4}"
+      DTS:From="Package\SQL Audit Start"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 6"
+      DTS:To="Package\EP Course" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 7]"
+      DTS:CreationName=""
+      DTS:DTSID="{008A33A8-414B-492B-AEED-631068518B60}"
+      DTS:From="Package\EP Course"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 7"
+      DTS:To="Package\SQL Audit End" />
   </DTS:PrecedenceConstraints>
   <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
 <!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
@@ -246,13 +283,25 @@
       <GraphLayout
         Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="155,42"
-          Id="Package\SQL Audit Start"
-          TopLeft="351,27" />
+          Size="191,42"
+          Id="Package\EP Deparment"
+          TopLeft="606,150" />
+        <NodeLayout
+          Size="191,42"
+          Id="Package\EP Instructors"
+          TopLeft="356,144" />
         <NodeLayout
           Size="191,42"
           Id="Package\EP Student"
           TopLeft="99,148" />
+        <NodeLayout
+          Size="152,42"
+          Id="Package\SQL Audit End"
+          TopLeft="332,298" />
+        <NodeLayout
+          Size="155,42"
+          Id="Package\SQL Audit Start"
+          TopLeft="351,27" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint]"
           TopLeft="428.5,69">
@@ -287,10 +336,6 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="152,42"
-          Id="Package\SQL Audit End"
-          TopLeft="332,298" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 1]"
           TopLeft="194.5,190">
@@ -325,10 +370,6 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="191,42"
-          Id="Package\EP Instructors"
-          TopLeft="356,144" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 2]"
           TopLeft="452.25,69">
@@ -385,17 +426,6 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <AnnotationLayout
-          Text=""
-          ParentId="Package"
-          FontInfo="{assembly:Null}"
-          Size="29,40"
-          Id="9b87f4f1-5b9b-4413-ab2b-268de355f08e"
-          TopLeft="221,249" />
-        <NodeLayout
-          Size="191,42"
-          Id="Package\EP Deparment"
-          TopLeft="606,150" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 4]"
           TopLeft="465.25,69">
@@ -456,6 +486,85 @@
                     Point3="-257.5,73.448275862069" />
                   <mssgle:LineSegment
                     End="-257.5,98.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <AnnotationLayout
+          Text=""
+          ParentId="Package"
+          FontInfo="{assembly:Null}"
+          Size="29,40"
+          Id="9b87f4f1-5b9b-4413-ab2b-268de355f08e"
+          TopLeft="221,249" />
+        <NodeLayout
+          Size="191,42"
+          Id="Package\EP Course"
+          TopLeft="843,125" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 6]"
+          TopLeft="472.6,69">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="465.9,56"
+              Start="0,0"
+              End="465.9,48.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,12.8656447249775" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,12.8656447249775"
+                    Point2="0,16.8656447249775"
+                    Point3="4,16.8656447249775" />
+                  <mssgle:LineSegment
+                    End="461.9,16.8656447249775" />
+                  <mssgle:CubicBezierSegment
+                    Point1="461.9,16.8656447249775"
+                    Point2="465.9,16.8656447249775"
+                    Point3="465.9,20.8656447249775" />
+                  <mssgle:LineSegment
+                    End="465.9,48.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 7]"
+          TopLeft="938.5,167">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-487.3,131"
+              Start="0,0"
+              End="-487.3,123.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,87.5073529411765" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,87.5073529411765"
+                    Point2="0,91.5073529411765"
+                    Point3="-4,91.5073529411765" />
+                  <mssgle:LineSegment
+                    End="-483.3,91.5073529411765" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-483.3,91.5073529411765"
+                    Point2="-487.3,91.5073529411765"
+                    Point3="-487.3,95.5073529411765" />
+                  <mssgle:LineSegment
+                    End="-487.3,123.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>

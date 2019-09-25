@@ -8,7 +8,7 @@
       DTS:ConnectionString="Data Source=192.168.40.206;User ID=svanderest1;Initial Catalog=svanderest_IronwoodDWStaging;Provider=MSOLEDBSQL.1;Auto Translate=False;Application Name=SSIS-Svanderest_Lab4-{2D73CA82-82C6-4A31-8DBF-52616D70BA91}192.168.40.206.svanderest_IronwoodDWStaging.svanderest1;">
       <DTS:Password
         DTS:Name="Password"
-        Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAPAnauVeBOEKz3vFAwXzZVgAAAAACAAAAAAADZgAAwAAAABAAAAAV5G0GmWY1Ouzc0abPoYf2AAAAAASAAACgAAAAEAAAAKi0uvyjzsKscQhNJrD1Hpl4AAAA2AhnDhylRngaNrxIFNH7+olVuiwcNuSQBHtfWA4xfaZ3VP54IxC/NcbM+9QfVpyGVAOGQ1LKxDsq1c/yfxmpz0QEDa8/QgXOe+mjluSBoOl9Q5sGf1LI4MEw/u49rOvcbCfTl5jD39lJV/ZPGvSbDDRHzUFSOFa5FAAAAGIwb/Kd4sllOjT2FZSJkDImM013</DTS:Password>
+        Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAE85iZMT5OkKTQlcVXIyeXAAAAAACAAAAAAADZgAAwAAAABAAAAA9S0VTMqt9QGH8M6P518xMAAAAAASAAACgAAAAEAAAACwRmA36GU1CSbw0FknM+np4AAAA1uKg9YtH/KqBZYgx761bCyT94gyN8GLdQBGTSjsOHKuow/cYBAV03p+1fAnAOYw0ecVrymxa0er3dOSze6L/o+RMxZlQx+QwR6IGHqLHK61TeRTRKFaBQw7Lo3eIavIbPUj0yb+ONB/+/DbHjz+B2ld5uum8dksRFAAAALmVzEtX1gHx7s6StiT2Q6zYuR69</DTS:Password>
     </DTS:ConnectionManager>
   </DTS:ObjectData>
 </DTS:ConnectionManager>
